@@ -1,0 +1,52 @@
+create database if not exists  restaurante;
+use  restaurante;
+
+create table if not exists cliente (
+id_cliente int auto_increment primary key,
+nome varchar(100),
+telefone varchar(15)
+);
+
+create table if not exists prato (
+id_prato int auto_increment primary key,
+nome varchar(100),
+preco decimal(10,2)
+);
+
+create table if not exists pedido (
+id_pedido int auto_increment primary key,
+id_cliente int,
+data_pedido date
+);
+
+create table if not exists item (
+id_item int auto_increment primary key,
+id_pedido int,
+id_prato int,
+quantidade varchar(50)
+);
+
+insert into cliente (nome, telefone) values
+("maria","111111111111"),
+("jose","222222222222"),
+("ana","333333333333"),
+("joao","444444444444"),
+("flavia","55555555555");
+
+insert into prato(nome, preco) values
+("strogonoff",37),
+("arroz e feijao",22),
+("salmao",95),
+("espaguete",26),
+("carbonara",100),
+("bife",70);
+
+insert into pedido (data_pedido) values
+("24-11-28"),
+("24-11-15"),
+("24-10-03");
+
+insert into intem (quantidade) values
+("2"),
+("1"),
+("3");
