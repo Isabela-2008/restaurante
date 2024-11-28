@@ -1,0 +1,26 @@
+Projeto de Sistema de Gerenciamento de Restaurante
+
+Desenvolver um sistema para gerenciamento de um restaurante, que permite registrar clientes, pratos no menu, pedidos e itens de cada pedido. O sistema deverá permitir as seguintes funcionalidades:
+
+Clientes: Adicionar, visualizar e gerenciar informações de clientes, incluindo nome e telefone.
+Cardápio: Adicionar, visualizar e gerenciar pratos disponíveis no menu, incluindo nome e preço.
+Pedidos: Registrar pedidos realizados pelos clientes, incluindo a data do pedido.
+Itens no Pedido: Associar pratos solicitados a cada pedido, juntamente com a quantidade de cada prato.
+Estrutura do Banco de Dados
+O banco de dados restaurante contém as seguintes tabelas:
+
+cliente: Armazena informações dos clientes (ID, nome e telefone).
+prato: Armazena informações dos pratos (ID, nome e preço).
+pedido: Armazena informações dos pedidos (ID do pedido, ID do cliente e data do pedido).
+item: Armazena os itens de cada pedido (ID do item, ID do pedido, ID do prato e quantidade).
+Instruções de Uso
+Criar o Banco de Dados: O script cria o banco de dados restaurante se ele não existir e utiliza este banco de dados para as operações subsequentes.
+Criar Tabelas: O script cria as tabelas cliente, prato, pedido e item, com suas respectivas colunas e tipos de dados.
+Inserir Dados: O script insere dados de exemplo nas tabelas de clientes e pratos, além de registrar pedidos e itens.
+Requisitos
+MySQL ou MariaDB instalado
+Acesso a um terminal para executar os comandos SQL
+Como Executar
+Copie e cole o script SQL em um cliente MySQL.
+Execute as instruções em sequência.
+Verifique se os dados foram criados corretamente.
